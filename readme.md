@@ -4,13 +4,7 @@ Text classification is a complex task. Given the small dataset, I decided to aug
 The following experiments involve simple augmentation techniques, chosen to test the effectiveness of straightforward methods. These included freezing/unfreezing layers, using different optimizers, applying early stopping (both manual and automatic to avoid overfitting), and utilizing a larger BERT model. Despite their simplicity, these approaches achieved reasonable results.
 
 # Methodology
-<<<<<<< HEAD
 Each experiment begins with a hypothesis and uses specified methods to achieve optimal results. I document my thoughts throughout the process and include tables and graphs to show results for each sub-experiment.
-=======
-I am starting each experiment with a hypothesis, and trying however I can to get the best result using the methods described.
-I will write my thoughts as I am experimenting, and I will insert tables and graphs with the results of the sub-experiments.
->>>>>>> 64740347db47732badf2eecba73d0b17e71d3a07
-
 A sub-directory in the repository, titled "Experiments," contains the code for replicating the final stages of the experiment.
 
 
