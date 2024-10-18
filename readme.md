@@ -22,7 +22,7 @@ In this baseline model, I haven’t implemented schedulers, patience counters, o
 **Hypothesis:** Stopping the model early will prevent overfitting.
 
 The baseline model didn’t specify a set number of epochs since this varies with different augmentations. I initially set the epoch limit to 15. While training loss continued to decrease, this wasn’t a reliable indicator of model performance. Instead, the validation loss and accuracy began plateauing around epoch 3, highlighting overfitting. Although the CrossEntropyLoss of the validation set converged by epoch 3, I ran all 15 epochs.
-
+![alt text](attachments/attachment1.png)
 ### Results:
 **Test Accuracy (Epoch 15):** 0.7830
 
@@ -59,7 +59,7 @@ Early stopping significantly improved model performance by reducing overfitting,
 In this experiment, I froze certain layers to observe its impact on model performance. I initially set the epoch count to 10 to identify when the model began to overfit. I found that overfitting started around the sixth epoch.
 
 To account for this, I reduced the epoch count to 5. Here are the results:
-
+![alt text](attachments/attachment2.png)
 ### Results with 4 Unfrozen Layers:
 **Test Accuracy:** 0.7929
 
@@ -76,6 +76,7 @@ To account for this, I reduced the epoch count to 5. Here are the results:
 The results showed a decline in performance, prompting me to test different configurations for frozen layers. 
 
 ### Results with 2 Unfrozen Layers:
+![alt text](attachments/attachment3.png)
 I found that the model began to overfit around the eighth epoch, so I stopped training at the seventh.
 
 **Test Accuracy:** 0.8053
@@ -91,6 +92,7 @@ I found that the model began to overfit around the eighth epoch, so I stopped tr
 | **weighted avg** | 0.80      | 0.80   | 0.80     | 2332    |
 
 ### Results with 8 Unfrozen Layers:
+![alt text](attachments/attachment4.png)
 The best validation accuracy was observed around the fourth epoch, so I stopped training there.
 
 **Test Accuracy:** 0.8057
